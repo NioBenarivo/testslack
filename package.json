@@ -1,16 +1,24 @@
 {
-  "name": "unifybot",
+  "name": "jokes-bot",
   "version": "1.0.0",
+  "description": "A slack bot that tells you jokes",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/astr0-4/jokes-bot.git"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "request": "^2.88.0",
-    "slackbots": "^1.2.0"
+  "bugs": {
+    "url": "https://github.com/astr0-4/jokes-bot/issues"
   },
-  "devDependencies": {},
-  "description": ""
+  "homepage": "https://github.com/astr0-4/jokes-bot#readme",
+  "dependencies": {
+    "request": "^2.81.0",
+    "slackbots": "^1.0.2"
+  }
 }
