@@ -2,7 +2,7 @@ var SlackBot = require("slackbots")
 var request = require("request")
 var endpoint = "https://icanhazdadjoke.com/slack"
 
-const envKey = process.env.JOKES_BOT_TOKEN
+const envKey = process.env.JOKES_BOT_TOKEN || 'xoxb-491925787618-493382465046-22uJEbUYgIbcCLWqdQbkUkHn'
 
 // create a bot
 var bot = new SlackBot({
