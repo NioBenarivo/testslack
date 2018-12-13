@@ -1,14 +1,11 @@
 const SlackBot = require("slackbots");
 const request = require('request');
-const channel = "general";
 
-const BOT_NAME = 'Jokes bot'
+const envKey = process.env.JOKES_BOT_TOKEN
 
 const bot = new SlackBot({
-  token: "xoxb-491925787618-493382465046-SIMYEX0tblGUPEhZC93icYrV",
-  name: BOT_NAME,
-  as_user: true,
-  icon_url: ''
+  token: envKey,
+  name: 'Jokes Bot'
 });
 
 bot.on("start", function() {
